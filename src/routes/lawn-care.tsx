@@ -53,7 +53,7 @@ function LawnCare() {
     <>
       <PageHero
         eyebrow="Lawn Care"
-        title="Tall grass? Get ribbit."
+        title={"Tall grass?\nGet ribbit."}
         intro="Keep your yard sharp without giving up your weekends. Frog Home Club handles the lawn so you don't have to."
         image={heroLawn}
         imageAlt="Striped, freshly mowed lawn in front of a brick home"
@@ -109,7 +109,7 @@ function LawnCare() {
       <Faq items={faqs} />
 
       <CtaBand
-        title="Tall grass? Get ribbit."
+        title={"Tall grass?\nGet ribbit."}
         callLabel="Call for a Lawn Quote"
         textLabel="Text for a Lawn Quote"
       />

@@ -65,7 +65,7 @@ function JunkRemoval() {
     <>
       <PageHero
         eyebrow="Junk Removal"
-        title="Got junk? Get ribbit."
+        title={"Got junk?\nGet ribbit."}
         intro="Clear the clutter and reclaim your space. Point to it, and we'll haul it away."
         image={junkHaul}
         imageAlt="Trailer loaded with a mattress, grill, and furniture beside an emptied garage"
@@ -129,7 +129,7 @@ function JunkRemoval() {
       <Faq items={faqs} />
 
       <CtaBand
-        title="Got junk? Get ribbit."
+        title={"Got junk?\nGet ribbit."}
         callLabel="Call for a Junk Removal Quote"
         textLabel="Text for a Junk Removal Quote"
       />

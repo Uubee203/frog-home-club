@@ -8,7 +8,7 @@ export function Faq({ items }: { items: FaqItem[] }) {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 md:grid-cols-[1fr_2fr]">
         <div>
           <p className="eyebrow text-leaf">FAQ</p>
-          <h2 className="mt-3 text-6xl text-forest">Questions? Ribbit.</h2>
+          <h2 className="mt-3 whitespace-pre-line text-6xl text-forest">{"Questions?\nRibbit."}</h2>
         </div>
         <Accordion type="single" collapsible className="w-full">
           {items.map((item) => (

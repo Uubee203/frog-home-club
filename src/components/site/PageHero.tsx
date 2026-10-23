@@ -23,7 +23,7 @@ export function PageHero({ eyebrow, title, intro, image, imageAlt, children }: P
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28">
         <div className="max-w-2xl animate-rise">
           <p className="eyebrow text-lime">{eyebrow}</p>
-          <h1 className="mt-4 text-6xl text-on-dark sm:text-7xl md:text-8xl">{title}</h1>
+          <h1 className="mt-4 whitespace-pre-line text-6xl text-on-dark sm:text-7xl md:text-8xl">{title}</h1>
           <p className="mt-6 text-lg text-on-dark-muted sm:text-xl">{intro}</p>
           {children && <div className="mt-8">{children}</div>}
         </div>
