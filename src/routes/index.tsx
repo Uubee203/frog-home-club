@@ -30,7 +30,7 @@ const services = [
   {
     to: "/lawn-care" as const,
     tag: "Lawn Care",
-    title: "Tall grass? Get ribbit.",
+    title: "Tall grass?\nGet ribbit.",
     body: "Mowing, edging, leaf cleanup, and bed cleanup.",
     image: lawnEdging,
     alt: "Trimmer edging a crisp line along a driveway",
@@ -38,7 +38,7 @@ const services = [
   {
     to: "/junk-removal" as const,
     tag: "Junk Removal",
-    title: "Got junk? Get ribbit.",
+    title: "Got junk?\nGet ribbit.",
     body: "Furniture, yard debris, garage cleanouts, and more.",
     image: junkHaul,
     alt: "Trailer loaded with old furniture and debris beside an emptied garage",
@@ -131,7 +131,7 @@ function Home() {
                 <span className="eyebrow w-fit rounded-full bg-lime px-3 py-1 text-forest-deep">
                   {s.tag}
                 </span>
-                <h3 className="mt-4 text-5xl text-on-dark sm:text-6xl">{s.title}</h3>
+                <h3 className="mt-4 whitespace-pre-line text-5xl text-on-dark sm:text-6xl">{s.title}</h3>
                 <p className="mt-2 text-on-dark-muted">{s.body}</p>
                 <span className="mt-6 inline-flex items-center gap-2 font-display text-xl tracking-wider text-lime">
                   Learn More
@@ -193,7 +193,7 @@ function Home() {
 
       <Reviews />
 
-      <CtaBand title="Problem? Get ribbit." />
+      <CtaBand title="Problem?\nGet ribbit." />
     </>
   );
 }

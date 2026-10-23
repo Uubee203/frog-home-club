@@ -16,7 +16,7 @@ export function CtaBand({ title, body, callLabel, textLabel }: Props) {
       <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 md:grid-cols-[1fr_auto] md:py-20">
         <div>
           <p className="eyebrow text-lime">Call or Text {PHONE_DISPLAY}</p>
-          <h2 className="mt-3 text-6xl text-on-dark sm:text-7xl md:text-8xl">{title}</h2>
+          <h2 className="mt-3 whitespace-pre-line text-6xl text-on-dark sm:text-7xl md:text-8xl">{title}</h2>
           {body && <p className="mt-4 max-w-xl text-lg text-on-dark-muted">{body}</p>}
           <CallTextButtons
             className="mt-8"
