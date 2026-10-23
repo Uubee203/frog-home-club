@@ -43,7 +43,12 @@ export function Header() {
           >
             <Phone className="h-4 w-4" aria-hidden />
             <span className="hidden sm:inline">Call or Text {PHONE_DISPLAY}</span>
-            <span className="sm:hidden">{PHONE_DISPLAY}</span>
+            <span className="flex flex-col leading-none sm:hidden">
+              <span className="font-sub text-[0.6rem] font-bold uppercase tracking-widest">
+                Call or Text
+              </span>
+              <span>{PHONE_DISPLAY}</span>
+            </span>
           </a>
           <button
             type="button"
