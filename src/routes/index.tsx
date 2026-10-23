@@ -54,7 +54,7 @@ const steps = [
 const reasons = [
   { icon: Clock, title: "Shows up when promised." },
   { icon: Receipt, title: "Clear, upfront pricing." },
-  { icon: Camera, title: "Before and after photos on every job." },
+  { icon: Camera, title: "You’ll always know what got done." },
 ];
 
 function Home() {
