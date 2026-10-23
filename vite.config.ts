@@ -12,4 +12,18 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    // Pre-bundle UI deps up front so the dev server never re-optimizes mid-session,
+    // which can load two React copies and crash with "reading 'useContext'".
+    optimizeDeps: {
+      include: [
+        "lucide-react",
+        "@radix-ui/react-slot",
+        "@radix-ui/react-accordion",
+        "class-variance-authority",
+        "clsx",
+        "tailwind-merge",
+      ],
+    },
+  },
 });
