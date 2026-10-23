@@ -193,7 +193,7 @@ function Home() {
 
       <Reviews />
 
-      <CtaBand title="Problem?\nGet ribbit." />
+      <CtaBand title={"Problem?\nGet ribbit."} />
     </>
   );
 }
