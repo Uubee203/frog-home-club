@@ -10,33 +10,73 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as JunkRemovalRouteImport } from './routes/junk-removal'
+import { Route as LawnCareRouteImport } from './routes/lawn-care'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JunkRemovalRoute = JunkRemovalRouteImport.update({
+  id: '/junk-removal',
+  path: '/junk-removal',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LawnCareRoute = LawnCareRouteImport.update({
+  id: '/lawn-care',
+  path: '/lawn-care',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/junk-removal': typeof JunkRemovalRoute
+  '/lawn-care': typeof LawnCareRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/junk-removal': typeof JunkRemovalRoute
+  '/lawn-care': typeof LawnCareRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/junk-removal': typeof JunkRemovalRoute
+  '/lawn-care': typeof LawnCareRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/about' | '/contact' | '/junk-removal' | '/lawn-care'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/about' | '/contact' | '/junk-removal' | '/lawn-care'
+  id: '__root__' | '/' | '/about' | '/contact' | '/junk-removal' | '/lawn-care'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  ContactRoute: typeof ContactRoute
+  JunkRemovalRoute: typeof JunkRemovalRoute
+  LawnCareRoute: typeof LawnCareRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +88,43 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/junk-removal': {
+      id: '/junk-removal'
+      path: '/junk-removal'
+      fullPath: '/junk-removal'
+      preLoaderRoute: typeof JunkRemovalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lawn-care': {
+      id: '/lawn-care'
+      path: '/lawn-care'
+      fullPath: '/lawn-care'
+      preLoaderRoute: typeof LawnCareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  ContactRoute: ContactRoute,
+  JunkRemovalRoute: JunkRemovalRoute,
+  LawnCareRoute: LawnCareRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
