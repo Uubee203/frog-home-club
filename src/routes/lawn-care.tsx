@@ -40,11 +40,11 @@ const faqs: FaqItem[] = [
   { q: "Do you offer recurring mowing?", a: "Yes. Ask about our spring mowing plans." },
   {
     q: "How do I know the job was done right?",
-    a: "We send before and after photos after every visit.",
+    a: "You’ll always know what got done.",
   },
   {
     q: "Do I need to be home?",
-    a: "Usually not. As long as we can get to the yard and any gates are unlocked, we can take care of it while you're out. We'll send before and after photos when we're done.",
+    a: "Usually not. As long as we can get to the yard and any gates are unlocked, we can take care of it while you're out. You’ll always know what got done.",
   },
 ];
 

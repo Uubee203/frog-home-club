@@ -48,7 +48,7 @@ const services = [
 const steps = [
   { icon: MessageSquareText, title: "Call or text", body: "Call or text for a quote." },
   { icon: CalendarCheck, title: "Pick a time", body: "We confirm a time." },
-  { icon: Camera, title: "Job done", body: "Job done, with before and after photos." },
+  { icon: Camera, title: "Job done", body: "You’ll always know what got done." },
 ];
 
 const reasons = [
