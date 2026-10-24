@@ -14,8 +14,8 @@ export function Header() {
           <img
             src={logo}
             alt="Frog Home Club"
-            width={1321}
-            height={465}
+            width={1336}
+            height={482}
             className="h-11 w-auto sm:h-14"
           />
         </Link>
