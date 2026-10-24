@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/frog-home-club-logo.png";
+import logo from "@/assets/frog-home-club-horizontal.png";
 import { NAV_LINKS, PHONE_DISPLAY, TEL_HREF } from "@/lib/site";
 
 export function Header() {
@@ -10,17 +10,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-on-dark/10 bg-ink/95 backdrop-blur">
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between gap-4 px-4 py-2 sm:px-6">
-        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+        <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
           <img
             src={logo}
-            alt="Frog Home Club logo"
-            width={56}
-            height={56}
-            className="h-12 w-12 sm:h-14 sm:w-14"
+            alt="Frog Home Club"
+            width={1321}
+            height={465}
+            className="h-11 w-auto sm:h-14"
           />
-          <span className="hidden font-display text-2xl leading-none text-on-dark sm:block">
-            Frog <span className="text-lime">Home Club</span>
-          </span>
         </Link>
 
         <nav aria-label="Main" className="hidden items-center gap-1 lg:flex">
