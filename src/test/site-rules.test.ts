@@ -7,12 +7,12 @@ import { PHONE_DISPLAY, SMS_HREF, TEL_HREF, localBusinessSchema } from "@/lib/si
 
 describe("contact rules", () => {
   it("Call links dial (469) 608-0583", () => {
-    expect(TEL_HREF).toBe("tel:4696080583");
+    expect(TEL_HREF).toBe("tel:+14696080583");
     expect(PHONE_DISPLAY).toBe("(469) 608-0583");
   });
 
   it("Text links open SMS to (469) 608-0583", () => {
-    expect(SMS_HREF).toBe("sms:4696080583");
+    expect(SMS_HREF).toBe("sms:+14696080583");
   });
 
   it("LocalBusiness schema carries the phone number", () => {

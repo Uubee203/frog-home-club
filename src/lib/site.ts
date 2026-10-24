@@ -5,8 +5,8 @@ export const SITE_URL = "https://froghomeclub.com";
 export const PHONE_DISPLAY = "(469) 608-0583";
 export const PHONE_DIGITS = "4696080583";
 export const PHONE_E164 = "+14696080583";
-export const TEL_HREF = `tel:${PHONE_DIGITS}`;
-export const SMS_HREF = `sms:${PHONE_DIGITS}`;
+export const TEL_HREF = `tel:${PHONE_E164}`;
+export const SMS_HREF = `sms:${PHONE_E164}`;
 export const SERVICE_AREA = "Dallas-Fort Worth area";
 
 export const NAV_LINKS = [
