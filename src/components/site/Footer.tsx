@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/frog-home-club-logo.png.asset.json";
+import logo from "@/assets/frog-home-club-logo.png";
 import { NAV_LINKS, PHONE_DISPLAY, SMS_HREF, TEL_HREF } from "@/lib/site";
 
 export function Footer() {
@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="bg-ink pb-28 text-on-dark-muted lg:pb-0">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3">
         <div className="flex items-start gap-4">
-          <img src={logo.url} alt="" width={64} height={64} loading="lazy" className="h-16 w-16" />
+          <img src={logo} alt="" width={64} height={64} loading="lazy" className="h-16 w-16" />
           <div>
             <p className="font-display text-3xl text-on-dark">Frog Home Club</p>
             <p className="mt-1 text-sm">Lawn care and junk removal. Serving DFW.</p>

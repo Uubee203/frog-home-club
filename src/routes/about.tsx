@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Camera, Clock, Receipt } from "lucide-react";
-import mascot from "@/assets/frog-home-club-mascot.png.asset.json";
+import mascot from "@/assets/frog-home-club-mascot.png";
 import { CtaBand } from "@/components/site/CtaBand";
 
 const TITLE = "About | Frog Home Club";
@@ -45,7 +45,7 @@ function About() {
             </p>
           </div>
           <img
-            src={mascot.url}
+            src={mascot}
             alt="Frog Home Club mascot"
             width={376}
             height={320}
