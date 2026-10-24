@@ -1,4 +1,4 @@
-import mascot from "@/assets/frog-home-club-mascot.png.asset.json";
+import mascot from "@/assets/frog-home-club-mascot.png";
 import { CallTextButtons } from "./CallTextButtons";
 import { PHONE_DISPLAY } from "@/lib/site";
 
@@ -25,7 +25,7 @@ export function CtaBand({ title, body, callLabel, textLabel }: Props) {
           />
         </div>
         <img
-          src={mascot.url}
+          src={mascot}
           alt=""
           width={376}
           height={320}

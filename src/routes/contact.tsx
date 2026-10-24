@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Camera, MapPin, Phone } from "lucide-react";
-import mascot from "@/assets/frog-home-club-mascot.png.asset.json";
+import mascot from "@/assets/frog-home-club-mascot.png";
 import { CallTextButtons } from "@/components/site/CallTextButtons";
 import { PHONE_DISPLAY, SERVICE_AREA, TEL_HREF } from "@/lib/site";
 
@@ -64,7 +64,7 @@ function Contact() {
         </div>
 
         <img
-          src={mascot.url}
+          src={mascot}
           alt="Frog Home Club mascot"
           width={376}
           height={320}

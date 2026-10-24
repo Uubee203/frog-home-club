@@ -3,7 +3,7 @@ import { ArrowRight, Camera, CalendarCheck, Clock, MessageSquareText, Receipt } 
 import heroLawn from "@/assets/hero-lawn.jpg";
 import lawnEdging from "@/assets/lawn-edging.jpg";
 import junkHaul from "@/assets/junk-haul.jpg";
-import mascot from "@/assets/frog-home-club-mascot.png.asset.json";
+import mascot from "@/assets/frog-home-club-mascot.png";
 import { CallTextButtons } from "@/components/site/CallTextButtons";
 import { CtaBand } from "@/components/site/CtaBand";
 import { Reviews } from "@/components/site/Reviews";
@@ -86,7 +86,7 @@ function Home() {
             />
           </div>
           <img
-            src={mascot.url}
+            src={mascot}
             alt="Frog Home Club mascot, a frog in sunglasses leaning on a roof"
             width={376}
             height={320}

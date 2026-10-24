@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/frog-home-club-logo.png.asset.json";
+import logo from "@/assets/frog-home-club-logo.png";
 import { NAV_LINKS, PHONE_DISPLAY, TEL_HREF } from "@/lib/site";
 
 export function Header() {
@@ -12,7 +12,7 @@ export function Header() {
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between gap-4 px-4 py-2 sm:px-6">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <img
-            src={logo.url}
+            src={logo}
             alt="Frog Home Club logo"
             width={56}
             height={56}
