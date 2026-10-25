@@ -47,9 +47,12 @@ export function Footer() {
         </nav>
       </div>
       <div className="border-t border-on-dark/10">
-        <p className="mx-auto max-w-7xl px-4 py-5 text-xs sm:px-6">
-          © {year} Frog Home Club. Call or Text {PHONE_DISPLAY}. Serving DFW.
-        </p>
+        <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs sm:flex-row sm:items-center sm:justify-between sm:px-6">
+          <p>© {year} Frog Home Club. Call or Text {PHONE_DISPLAY}. Serving DFW.</p>
+          <Link to="/privacy" className="font-semibold text-leaf underline-offset-4 hover:text-lime hover:underline">
+            Privacy Policy
+          </Link>
+        </div>
       </div>
     </footer>
   );

@@ -22,7 +22,7 @@ describe("contact rules", () => {
 
 describe("site pages", () => {
   const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
-  for (const path of ["/", "/lawn-care", "/junk-removal", "/about", "/contact"]) {
+  for (const path of ["/", "/lawn-care", "/junk-removal", "/about", "/contact", "/privacy"]) {
     it(`has a page at ${path}`, () => {
       expect(router.matchRoutes(path).at(-1)?.routeId).not.toBe(rootRouteId);
     });
