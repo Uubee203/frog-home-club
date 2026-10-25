@@ -1,4 +1,4 @@
-import mascot from "@/assets/frog-home-club-mascot.png";
+import mascot from "@/assets/call-me-frog.png";
 import { CallTextButtons } from "./CallTextButtons";
 import { PHONE_DISPLAY } from "@/lib/site";
 
@@ -27,8 +27,8 @@ export function CtaBand({ title, body, callLabel, textLabel }: Props) {
         <img
           src={mascot}
           alt=""
-          width={376}
-          height={320}
+          width={640}
+          height={636}
           loading="lazy"
           className="mx-auto hidden w-72 drop-shadow-2xl md:block lg:w-80"
         />
